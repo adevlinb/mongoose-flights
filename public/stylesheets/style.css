@@ -1,8 +1,94 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: rgb(149, 191, 228);
+  box-sizing: border-box;
+  min-width: fit-content;
 }
 
 a {
   color: #00B7FF;
+}
+
+#navigation {
+  background-color: rgb(149, 191, 228);
+  overflow: hidden;
+  padding: 10px;
+  padding-left: 50px;
+}
+
+#whole {
+  padding: 30px;
+  background-color: white;
+  width: 100%;
+}
+
+#ALLflights {
+  border-spacing: 15px;
+  border-style: solid black 2px;
+}
+
+#link {
+  color: purple;
+}
+
+.tableTitle {
+  font-size: large;
+
+}
+
+#title {
+  color:rgb(30, 95, 152);
+  -webkit-text-stroke: 0.5px black;
+  margin-bottom: 15px;
+  text-decoration: underline;
+}
+
+.fontFix {
+  font-size: large;
+  max-width: fit-content;
+}
+
+.contents {
+  padding: 5px;
+  border: solid 1px;
+}
+
+#footer {
+  background-color: rgb(149, 191, 228);
+  height: 100%;
+  width: 100vw;
+}
+
+#sidexside {
+  display: flex;
+  flex-direction: row;
+}
+
+#ontop {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  margin-top: 0;
+}
+
+.details {
+  margin-bottom: 0;
+}
+
+#bold {
+  font-weight: 600;
+}
+
+#smlmargin {
+  margin: 5px;
+}
+
+#newMargin {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.bottom {
+  display: flex;
+  justify-content: flex-end;
 }

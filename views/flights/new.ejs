@@ -1,27 +1,39 @@
 <%- include('../partials/header') %>
+<div id="whole">
 
-
-<h2>MAKE A NEW FLIGHT</h2>
-<form action="/flights" method="POST">
-    <label>Airline:
-        <input type="text" name="airline">
-    </label><br>
-    <label>Airport:
-        <select name="airport">
-            <option value="AUS">AUS</option>
-            <option value="DFW">DFW</option>
-            <option value="DEN">DEN</option>
-            <option value="LAX">LAX</option>
-            <option value="SAN">SAN</option>
-        </select>
-    </label><br>
-    <label>Flight Number:
-        <input type="number" name="flightNo">
-    </label><br>
-    <label>Departure Date:
-        <input type="date" required name="departure">
-    </label><br>
-    <input type="submit" value="Add Flight">
+<h2 id="title">MAKE A NEW FLIGHT</h2>
+<form id="sidexside" action="/flights" method="POST">
+    <div id="ontop">
+        <label class="fontFix" id="newMargin">Airport:
+            <select name="airport">
+                <option value="AUS">AUS</option>
+                <option value="DFW">DFW</option>
+                <option value="DEN">DEN</option>
+                <option value="LAX">LAX</option>
+                <option value="SAN">SAN</option>
+            </select>
+        </label>
+    </div>
+    <div id="ontop">
+        <label class="fontFix" id="newMargin">Airline:
+            <select name="airline">
+                <option value="American">American</option>
+                <option value="Southwest">Southwest</option>
+                <option value="United">United</option>
+            </select>
+        </label>
+    </div>
+    <div id="ontop">
+        <label class="fontFix" id="newMargin">Flight Number:
+            <input type="number" name="flightNo">
+        </label>
+    </div>
+    <div id="ontop">
+        <label class="fontFix" id="newMargin">Departure Date:
+            <input type="date" required name="departure">
+        </label>
+    </div>
+    <div id="ontop" class="bottom"><input type="submit" value="Add Flight"></div>
 </form>
-
+</div>
 <%- include('../partials/footer') %>
